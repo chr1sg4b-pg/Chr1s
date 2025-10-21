@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot  |  GuardIA</title>
+    <link rel="stylesheet" href="../css/css2.css">
+</head>
+<body>
+
+<!-- ============================================================================ -->
+<!-- Cabeçalho -->
+    <nav class="barra_de_navegação">
+        
+        <div class="logo">
+            <img src="" alt="">
+            <a href="Home(1).html">GuardIA</a>
+        </div>
+        <ul class="link_de_navegação" id="inkDeNavegação">
+           <li class="ativo">
+           <li><a href="Quem-somos(3).html">QUEM SOMOS</a></li>
+           <li><a href="#">TRABALHE CONOSCO</a></li>
+           <li><a href="#">CONTEÚDOS</a></li>
+        </ul>
+
+
+        <div class="nav-direita">
+            <button class="btn-idioma">
+               🇧🇷 🌎
+            </button>
+        </div>
+
+        <div class="caixa-busca">
+            <input type="text" placeholder="BUSCAR">
+            <button class="btn-buscar">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+
+        <button class="btn-login">
+           👤 FAZER LOGIN
+        </button>
+    </nav>
+
+<!-- ============================================================================ -->
+<!-- chat -->
+<div class="layout">
+    <aside class="sidebar">
+        <div class="logo-bot">🤖 GuardIA Bot</div>
+        <nav>
+            
+            <button id="novoChatBtn">+ Novo chat</button>
+            <button id="buscarBtn">🔍 Buscar em chats</button>
+            <br>
+            <button id="galeriaBtn">🖼 Galeria</button>
+            <button id="monitoramentoBtn">👀 Monitoramento</button/>
+            <button id="dadosBtn">📊 Dados</button>
+            <button id="noticiasBtn">📰 Noticias</button>
+        </nav>
+        <div class="chats-list" id="chatsList"></div>
+    </aside>
+
+    <main class="chat-area">
+        <header>
+            <div class="dropdown">
+                <button class="dropdown-btn" id="chatTitle">
+                     Chat GuardIA ▾
+                </button>
+                <div class="dropdown-content">
+                    <div class="option">
+                        <div>
+                            <strong>GuardIA Plus</strong>
+                            <p>Nosso modelo mais inteligente e com IA</p>
+                        </div>
+                        <button class="upgrade-btn">Fazer upgrade</button>
+                    </div>
+                    <div class="option selected">
+                        <div>
+                            <strong>GuardIA</strong>
+                            <p>Ótimo para tarefas do dia a dia</p>
+                        </div>
+                        <span class="checkmark">✓</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="messages" id="messages">
+            <div class="bot-message">
+                Por onde começamos?
+            </div>
+        </div>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Pergunte alguma coisa...">
+            <button id="sendBtn">Enviar</button>
+        </div>
+    </main>
+</div>
+
+
+<script src="../js/chat.js"></script>
+</body>
+</html>
